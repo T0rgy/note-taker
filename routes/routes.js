@@ -19,7 +19,7 @@ module.exports = app => {
         });
 
         app.get('/api/notes/:id', function(req, res) {
-            res.json(notes[req.parms.id]);
+            res.json(notes[req.params.id]);
         });
 
         app.delete('/api/notes/:id', function(req, res) {
@@ -37,7 +37,7 @@ module.exports = app => {
         });
 
         function updateDB() {
-            fs.writeFileSync('db/db.json', JSON.stringify(notes, '\t'), err => {
+            fs.writeFile('db/db.json', JSON.stringify(notes, '\t'), err => {
                 if (err) throw err;
                 return true;
             });
