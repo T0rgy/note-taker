@@ -18,7 +18,7 @@
 
   ## Usage
   Use this project to create and delete notes.  
-  Heroku Deployment: <https://evening-escarpment-69766.herokuapp.com/>
+  Heroku Deployment: <https://note-takert0rgy.herokuapp.com/>
 
   ## License 
   There are no licenses associated with this project.
